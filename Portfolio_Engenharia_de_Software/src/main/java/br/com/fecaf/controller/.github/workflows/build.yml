@@ -1,0 +1,27 @@
+name: Build Spring Boot App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do repositório
+      uses: actions/checkout@v3
+
+    - name: Configurar Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin' # ou 'zulu'
+        java-version: '17'      # ou a versão do seu projeto
+
+    - name: Compilar com Maven
+      run: mvn clean install
+
+    - name: Rodar testes (opcional)
+      run: mvn test
