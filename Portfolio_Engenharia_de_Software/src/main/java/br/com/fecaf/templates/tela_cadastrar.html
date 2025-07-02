@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="CSS/style_cadastrar.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cadastro de Usuário</h2>
+    <form id="formCadastro">
+
+      <label for="usuario">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <label for="confirmarSenha">Confirmar Senha:</label>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+
+      <label>Tipo de Usuário:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="tipo" value="admin" required> Admin</label>
+        <label><input type="radio" name="tipo" value="desenvolvedor" required> Desenvolvedor</label>
+        <label><input type="radio" name="tipo" value="financas" required> Finanças</label>
+      </div>
+
+      <button type="submit" onclick="cadastrar()">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="JavaScript/script.js"></script>
+</body>
+</html>
