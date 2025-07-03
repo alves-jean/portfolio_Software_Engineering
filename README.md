@@ -16,3 +16,29 @@
 # Modificações
 - Ao apresentar a parte funcional para o cliente, ele se indagou a falta de autenticação para a parte de finanças da empresa;
 - Para suprir a mudança no escopo do sistema, se fez necessário regredir algumas etapas já concluídas no quadro Kanban.
+- Com a mimplementação de uma nova funcionalidade do escopo, foi necessário implementar no quadro Kanban:
+-   Construção da página de finanças;
+-   Alterar o banco de dados;
+-   Modificar código back-end e front-end.
+
+# Requisitos Funcionais e Não-funcionais
+- Funcionais:
+-   Cadastro de usuário;
+-   Cadastro de projetos;
+-   Cadastro de equipe por projeto;
+-   Visualização do progresso do projeto;
+-   Emissão de notificação ao chegar próximo do fim do Sprint;
+-   Visualização do calendário com todos os projetos em andamento (administrador)
+-   Visualização das funcionalidades a serem entregues vide data;
+-   Supervisão do progresso a cada operador;
+-   Controle de caixa;
+-   Controle da folha de pagamento;
+-   Controle de calendário de contas a pagar e a receber;
+-   E comunicação da entrega de produtos com alimentação do fluxo de caixa.
+
+- Não-funcionais:
+-   Controle de qualidade da operação;
+-   Otimização no controle financeiro;
+-   Maior autonomia do operador;
+-   Controle do fluxo de caixa;
+-   Segurança em relação à entrega dos produtos.
