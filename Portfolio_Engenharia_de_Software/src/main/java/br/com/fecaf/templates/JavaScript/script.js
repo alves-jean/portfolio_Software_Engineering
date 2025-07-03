@@ -14,7 +14,7 @@ function entrar() {
         if(login.usuario === usuario && login.senha === senha){
           if(login.tipo_permissao == "admin"){
             window.location.href = "tela_inicial_admin.html";
-          } else if(login.tipo_permissao == "desenvolvedor"){
+          } else if(login.tipo_permissao == "operador"){
             window.location.href = "tela_inicial.html";
           } else{
             window.location.href = "tela_inicial_financas.html"
@@ -59,7 +59,7 @@ function cadastrar(){
     body: JSON.stringify(cadastro)
   })
   .then(response => {
-    if (!response.ok) throw new Error('Erro ao salvar veículo');
+    if (!response.ok) throw new Error('Erro ao salvar usuario');
     return response.json();
   })
   .then(data => {
